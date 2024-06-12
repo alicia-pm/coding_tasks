@@ -1,0 +1,98 @@
+/* notes_app/static/style/styles.css */
+
+body {
+    font-family: H  elvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e7e8fd;
+}
+
+
+.header {
+    background-color: #0d122b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.footer {
+    background-color: #0d122b;
+    color: #fff;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+
+.container {
+    width: 30%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(2, 1, 19, 0.1);
+}
+
+
+.back-button,
+.add-note-page,
+.read-note-page,
+.update-note-page {
+    margin-bottom: 2rem;
+}
+
+
+.submit-button,
+.add-note-button,
+.update-note-button,
+.delete-note-button,
+.back-button {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #1e359c;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.back-button {
+    background-color: #0d1d60;
+}
+
+
+.delete-note-button {
+    background-color: #c74955;
+}
+
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+
+form input,
+form textarea {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding in the total width/height */
+}
+
+
+form button {
+    margin-top: 1rem 0;
+    font-size: medium;
+    padding: 0.5rem 1rem;
+    background-color: #19849a;
+    color: #fff;
+    border-radius: 4px;
+    border: None;
+    cursor: pointer;
+}

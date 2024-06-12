@@ -1,0 +1,17 @@
+<!-- notes_app/templates/read_note.html 
+Template for reading sticky notes-->
+
+
+{% extends 'base.html' %}
+
+{% block title %}{{ note.title }}{% endblock %}
+
+{% block content %}
+<div class="read-note-page">
+    <h2>{{ note.title }}</h2>
+    <p>{{ note.content }}</p>
+    <a class="update-note-button" href="{% url 'update_note' note.id %}">Edit Note</a>
+    <!-- Link back to the list of sticky notes -->
+    <a class="back-button" href="{% url 'display_notes' %}">Back to Sticky Notes</a>
+    <a class="delete-note-button" href="{% url 'delete_note' note.id %}">Delete Note</a>
+{% endblock %}
